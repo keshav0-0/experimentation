@@ -1,5 +1,4 @@
-from add import add
 
 
-def testAdd(x,y):
+def testAdd(add,x,y):
     print(x+y == add(x,y))
