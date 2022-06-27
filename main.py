@@ -17,8 +17,8 @@ def osysNp(cmd, suppress_stderr=False):
 
 # osysNp("git checkout master")
 
-from inputs import testAdd
-testAdd(1,2)
+# from inputs import testAdd
+# testAdd(1,2)
 
 
 osysNp("git checkout master")
