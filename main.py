@@ -15,13 +15,13 @@ def osysNp(cmd, suppress_stderr=False):
     return output,error
 
 
-osysNp("git checkout master")
+# osysNp("git checkout master")
 
 from inputs import testAdd
 testAdd(1,2)
 
 
-osysNp("git checkout test")
+osysNp("git checkout master")
 
 from inputs import testAdd
 testAdd(1,2)
