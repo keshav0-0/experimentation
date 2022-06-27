@@ -1,5 +1,5 @@
 import os, subprocess
-
+import importlib
 
 def osysNp(cmd, suppress_stderr=False):
     if suppress_stderr:
@@ -15,13 +15,13 @@ def osysNp(cmd, suppress_stderr=False):
     return output,error
 
 
-# osysNp("git checkout master")
-
-# from inputs import testAdd
-# testAdd(1,2)
-
-
 osysNp("git checkout master")
 
 from inputs import testAdd
+testAdd(1,2)
+
+
+osysNp("git checkout test")
+
+importlib.reload(testAdd)
 testAdd(1,2)
