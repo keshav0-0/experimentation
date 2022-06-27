@@ -23,11 +23,11 @@ osysNp("git checkout master")
 
 importlib.reload(inputs)
 importlib.reload(add)
-inputs.testAdd(add,1,2)
+inputs.testAdd(add.add,1,2)
 
 
 osysNp("git checkout test")
 
 importlib.reload(inputs)
 importlib.reload(add)
-inputs.testAdd(add,1,2)
+inputs.testAdd(add.add,1,2)
