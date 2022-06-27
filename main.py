@@ -2,7 +2,8 @@ import os, subprocess, sys
 import importlib
 sys.path.append(os.path.dirname(os.path.realpath(__file__)))
 import inputs
-add = importlib.import_module('add')
+import add
+# add = importlib.import_module('add')
 
 def osysNp(cmd, suppress_stderr=False):
     if suppress_stderr:
