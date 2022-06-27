@@ -2,6 +2,7 @@ import os, subprocess, sys
 import importlib
 sys.path.append(os.path.dirname(os.path.realpath(__file__)))
 import inputs
+add = importlib.import_module('add')
 
 def osysNp(cmd, suppress_stderr=False):
     if suppress_stderr:
@@ -20,12 +21,12 @@ def osysNp(cmd, suppress_stderr=False):
 osysNp("git checkout master")
 
 importlib.reload(inputs)
-
-inputs.testAdd(1,2)
+importlib.reload(add)
+inputs.testAdd(add,1,2)
 
 
 osysNp("git checkout test")
 
 importlib.reload(inputs)
-
-inputs.testAdd(1,2)
+importlib.reload(add)
+inputs.testAdd(add,1,2)
