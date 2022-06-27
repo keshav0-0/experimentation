@@ -22,7 +22,7 @@ def osysNp(cmd, suppress_stderr=False):
 osysNp("git checkout master")
 
 importlib.reload(inputs)
-# importlib.reload(add)
+importlib.reload(add)
 print(add.add(2,4))
 inputs.testAdd(add.add,1,2)
 
