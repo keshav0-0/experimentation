@@ -20,12 +20,12 @@ def osysNp(cmd, suppress_stderr=False):
 osysNp("git checkout master")
 
 importlib.reload(inputs)
-from inputs import testAdd
-testAdd(1,2)
+
+inputs.testAdd(1,2)
 
 
 osysNp("git checkout test")
 
 importlib.reload(inputs)
-from inputs import testAdd
-testAdd(1,2)
+
+inputs.testAdd(1,2)
